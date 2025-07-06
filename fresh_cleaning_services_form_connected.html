@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FRESH Cleaning Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7fdfc;
+      color: #333;
+    }
+    header {
+      background: #00bfa5;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #00796b;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .booking-form input, .booking-form select, .booking-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    .booking-form button {
+      background: #00bfa5;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      background: #00796b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FRESH Cleaning Services</h1>
+    <p><em>Powerfully Clean. Always.</em></p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We’re a Los Angeles-based cleaning service dedicated to providing homes with a fresh start. From general cleanings to deep move-in/out scrubs, we make sure your space shines — every time.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li><strong>General Cleaning</strong> – Routine upkeep and tidying.</li>
+      <li><strong>Deep Cleaning</strong> – A full, detailed clean of your home.</li>
+      <li><strong>Move-In / Move-Out</strong> – Sparkle before or after a move.</li>
+    </ul>
+  </section>
+
+  <section id="booking">
+    <h2>Book a Cleaning</h2>
+    <form class="booking-form" action="https://formspree.io/f/mkgbavey" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="text" name="address" placeholder="Service Address" required>
+      <select name="service" required>
+        <option value="">Select Service</option>
+        <option value="General">General Cleaning</option>
+        <option value="Deep">Deep Cleaning</option>
+        <option value="Move">Move-In / Move-Out</option>
+      </select>
+      <input type="date" name="date" required>
+      <input type="time" name="time" required>
+      <textarea name="notes" placeholder="Additional Notes (Optional)"></textarea>
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: freshcleansquad@gmail.com</p>
+    <p>Based in Los Angeles, CA – Willing to Travel</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FRESH Cleaning Services. All rights reserved.</p>
+  </footer>
+</body>
+</html>
